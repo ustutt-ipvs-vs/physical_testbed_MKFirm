@@ -6,7 +6,7 @@ This document describes how to reproduce the results from Section VI.A _Physical
 
 We use the inverted pendulum from [1] as a basis and adapted the source code. The sender and receiver are connected via two TSN-switches (Kontron KSwitch D10 MMT series). The configuration files for these switches are in the `/configs` folder. To flash the two Teensy microcontrollers, follow the instructions in `/pendulum_code/sender-receiver-teensy/README.md`. To compile both C++ applications (sender and receiver), follow the steps in `/pendulum_code/sender-receiver-linux/README.md`.
 
-![image](setup_overview.jpg)
+![image](setup.jpg)
 
 ## Execution
 To start a complete run with 15 min runtime for each (1,k)-firm configuration, do the following steps:
