@@ -8,6 +8,7 @@ We use the inverted pendulum from [1] as a basis and adapted the source code. Th
 
 ![image](setup_overview.jpg)
 
+
 ## Execution
 To start a complete run with 15 min runtime for each (1,k)-firm configuration, do the following steps:
 
