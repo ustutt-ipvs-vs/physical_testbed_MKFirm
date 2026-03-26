@@ -1,0 +1,16 @@
+{
+  "receiverAddress": "192.168.170.2",
+  "pendulumType": "newPendulum",
+  "serialDeviceName": "auto",
+  "swingUpBehavior":"noSwingUp",
+  "swingUpDistanceFactor": 0.1,
+  "swingUpSpeedFactor": 0.85,
+  "swingUpAccelerationFactor": 1.0,
+
+  "controllerKVector": [4.3716, 5.1535, -39.3898, -10.4341],
+  "controllerIntegratorParam": 1.0929,
+  "RMatrixDiagonalValue": 0.01,
+  "Q0MatrixDiagonalValue": 0.09,
+  "controlApproach": "mLQR",
+  "sigmaSquare": 1.0
+}

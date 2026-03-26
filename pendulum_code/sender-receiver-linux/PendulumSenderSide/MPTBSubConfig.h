@@ -1,0 +1,57 @@
+#ifndef SENDER_RECEIVER_LINUX_MPTBSUBCONFIG_H
+#define SENDER_RECEIVER_LINUX_MPTBSUBCONFIG_H
+
+#include <vector>
+#include "../nlohmann/json.hpp"
+
+class MPTBSubConfig {
+private:
+    std::string name;
+    double durationMinutes;
+    double b;
+    double r;
+    int numThresholds;
+    std::vector<double> thresholds;
+    std::vector<int> prioMapping;
+    std::vector<double> costs;
+    double reliability;
+    int consecutiveFrameLosses;
+    double durationMinutesBetweenFaults;
+    bool useET;
+    unsigned int allowedFrameLoss;
+
+public:
+    MPTBSubConfig(nlohmann::json configJson);
+
+    std::string getName() const;
+
+    double getDurationMinutes() const;
+
+    double getB() const;
+
+    double getR() const;
+
+    int getNumThresholds() const;
+
+    double getReliability() const;
+
+    int getConsecutiveFrameLosses() const;
+
+    double getDurationMinutesBetweenFaults() const;
+
+    bool getUseET() const;
+
+    unsigned int getAllowedFrameLoss() const;
+
+    const std::vector<double> &getThresholds() const;
+
+    const std::vector<int> &getPrioMapping() const;
+
+    const std::vector<double> &getCosts() const;
+
+    std::string toString() const;
+
+};
+
+
+#endif //SENDER_RECEIVER_LINUX_MPTBSUBCONFIG_H
